@@ -1,0 +1,8 @@
+@using AS_ViewModel.Models
+@model int[] //what we're passing in, doesn't necessarily have to be model
+
+<h2>Here are some numbers</h2>
+@foreach(var num in Model) //model is int array so now we call it model
+{
+    <p>@num</p>
+}

@@ -1,0 +1,8 @@
+@using AS_ViewModel.Models
+@model List<User>
+
+<h2>Here are some users!</h2>
+@foreach(var user in Model) //cycling through in list
+{
+    <p>@user.FirstName</p>
+}
